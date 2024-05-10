@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color:  #6d44b8;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url("./assets/thumb-1920-72397.jpg"); 
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #6d44b8;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    text-align: justify;
+    color: #fff;
+    font-size: 19px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #6d44b8;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover { 
+    background-color: #fff ;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 { 
+    background-image: url('https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/9d6f344c-7bc7-11ed-aa6e-9587410378a2/battinson.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://i.pinimg.com/originals/0a/a6/61/0aa66140c3d0bde86a8de619f1bf11da.png');
+}
+
+.banner-3 {
+    background-image: url('assets/Jim_Gordon_Total_Film_still.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.header2 {
+    height: 90px;
+    background-color: #000;
+    color: #fff;
+    font-family:  "Kdam Thmor Pro", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.complaint {
+    width: 40%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    justify-content: center;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 1179px) {
+    header {
+        height: 70px;
+    }
+    
+    li {
+        font-size: 17px;
+    }
+    
+    #logo {
+        width: 120px;
+    }
+    
+    .trailer {
+        width: 50%;
+        height: 50%;
+        margin-right: 5%;
+    }
+    
+    #sinopse {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .description {
+        width: 100%;
+    }
+    
+    .button {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    .actor-cards-container {
+        margin-top: 20%;
+    }
+    
+    .card {
+        height: 450px;
+        font-size: 14px;
+    }
+    
+    footer {
+        height: 250px;
+    }
+    
+    .complaint {
+        width: 90%;
+        height: 60%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    #trailer-container {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+    }
+    
+    li {
+        font-size: 16px;
+    }
+    
+    #logo {
+        width: 100px;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    #sinopse {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .description {
+        width: 100%;
+    }
+    
+    .button {
+        width: 140px;
+        height: 45px;
+        font-size: 15px;
+    }
+    
+    .actor-cards-container {
+        margin-top: 25%;
+    }
+    
+    .card {
+        height: 400px;
+        font-size: 13px;
+    }
+    
+    footer {
+        height: 200px;
+    }
+    
+    .complaint {
+        width: 100%;
+        height: 60%;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 0;
+    }
+
+    .trailer {
+        height: 200px;
+        width: 300px;
+    }
+
+    #trailer-container {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 50px;
+    }
+    
+    li {
+        font-size: 15px;
+    }
+    
+    #logo {
+        width: 80px;
+    }
+    
+    .trailer {
+        height: 300px;
+        width: 270px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+    
+    .button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        margin-left: 25%;
+    }
+    
+    .actor-cards-container {
+        margin-top: 20px;
+    }
+    
+    .card {
+        height: 350px;
+    }
+    
+    footer {
+        height: 150px;
+    }
+
+    #trailer-container {
+        border-bottom: none;
+    }
+}
